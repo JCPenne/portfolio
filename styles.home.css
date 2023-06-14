@@ -58,9 +58,9 @@ a {
 }
 
 :root {
-  --color-black: hsl(217, 5%, 13%);
+  --color-black: hsl(220, 9%, 13%);
   --color-white: hsl(15, 57%, 97%);
-  --color-grey: hsl(0, 5%, 91%);
+  --color-grey: hsl(0, 15%, 91%);
   --color-blue: hsl(217, 100%, 48%);
   --font-primary: 'Inter', sans-serif;
   --font-secondary: 'Montserrat', sans-serif;
@@ -227,38 +227,33 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
 
   & h3 {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   @media (width > 550px) {
-    gap: 10rem;
-  }
-}
-.content-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-@media (width > 550px) {
-  .content-container:nth-child(even) {
-    align-items: flex-end;
-  }
-  .content-container {
-    & h3 {
+    gap: 5rem;
+
+    .content-container:nth-child(even) {
+      align-items: flex-end;
+    }
+    & h3,
+    .content-image {
       width: 60%;
     }
   }
 }
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
 .content-image {
   width: 100%;
   filter: grayscale(100%);
-
-  @media (width > 550px) {
-    width: 60%;
-  }
 }
 .contact-links {
   & h2 {
