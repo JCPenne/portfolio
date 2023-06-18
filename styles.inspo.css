@@ -208,7 +208,7 @@ header {
 
   background-color: transparent;
   border: none;
-  color: var(--color-blue);
+  color: var(--color-black);
 
   @media (width > 550px) {
     top: calc(100% - 128px);
@@ -236,7 +236,7 @@ header {
 .content {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 2rem;
   padding-bottom: 5rem;
 
   & h3 {
@@ -279,7 +279,7 @@ header {
   }
 }
 .text-link {
-  text-decoration: solid var(--color-blue) underline;
+  text-decoration: solid var(--color-black) underline;
   text-underline-offset: 8px;
 
   padding-bottom: 2rem;
@@ -297,13 +297,13 @@ header {
   font-weight: 600;
   background-color: transparent;
   border: none;
-  color: var(--color-white);
+  color: var(--color-blue);
   white-space: nowrap;
   padding: 0;
   cursor: pointer;
 
   & i {
-    color: var(--color-blue);
+    color: var(--color-black);
   }
 
   @media (width > 550px) {
@@ -312,7 +312,7 @@ header {
   }
 
   & .chevron-up {
-    color: var(--color-blue);
+    color: var(--color-black);
     height: 64px;
     width: 64px;
 

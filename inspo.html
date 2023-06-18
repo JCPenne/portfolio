@@ -28,15 +28,17 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="script.js"></script>
+    <title>Jack Palmer</title>
   </head>
+
   <body>
     <header>
       <nav class="header-navbar">
-        <a href="#">Bio</a>
-        <a href="#">Work</a>
-        <a href="#">Inspiration</a>
-        <a href="#">Contact</a>
+        <a href="./home.html">Bio</a>
+        <a href="./work.html">Work</a>
+        <a href="./inspo.html">Inspiration</a>
       </nav>
     </header>
     <section class="hero-section">
@@ -49,46 +51,52 @@
         experiences.
       </h3>
       <section class="contact-buttons">
-        <button type="button">LinkedIn</button>
-        <button type="button">Github</button>
-        <button type="button">Email</button>
+        <button type="button">
+          <a
+            href="https://www.linkedin.com/in/jackcpalmer/"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
+        </button>
+        <button type="button">
+          <a
+            href="https://github.com/JCPenne"
+            target="_blank"
+          >
+            Github
+          </a>
+        </button>
+        <button type="button">
+          <a
+            href="mailto:jackcpalmer@gmail.com"
+            target="_blank"
+          >
+            Email Me
+          </a>
+        </button>
       </section>
     </section>
     <button
       type="button"
       class="scroll-down-button"
+      onclick="scrollToSection('scroll-point')"
     >
-      <i class="fa-solid fa-caret-down fa-2xl"></i>
+      <i
+        data-feather="chevron-down"
+        class="chevron-down"
+      ></i>
     </button>
-    <section class="section-header">
+    <hr class="section-break" />
+    <section
+      id="scroll-point"
+      class="section-header"
+    >
       <h2>What Inspires Me</h2>
       <hr />
     </section>
     <section class="content">
-      <div class="content-container">
-        <img
-          src="./images/gaming.jpg"
-          alt="A video game controller"
-          class="content-image"
-        />
-        <h3 class="content-paragraph">Text about gaming</h3>
-      </div>
-      <div class="content-container">
-        <img
-          src="./images/climbing.jpg"
-          alt="Sport Climbing Gear"
-          class="content-image"
-        />
-        <h3 class="content-paragraph">Text about climbing</h3>
-      </div>
-      <div class="content-container">
-        <img
-          src="./images/woodworking.jpg"
-          alt="A wood saw on a table with wood shavings"
-          class="content-image"
-        />
-        <h3 class="content-paragraph">Text about woodworking</h3>
-      </div>
+      
     </section>
     <hr class="section-break" />
     <section class="section-header">
@@ -96,25 +104,52 @@
       <hr />
     </section>
     <section class="contact-links">
-      <a>
-        <h2 class="text-link">LinkedIn</h2>
-      </a>
-      <a>
-        <h2 class="text-link">Github</h2>
-      </a>
-      <a>
-        <h2 class="text-link">Coffee And A Chat</h2>
-      </a>
-      <a>
-        <h2 class="text-link">Email Me</h2>
-      </a>
+      <button>
+        <a
+          href="https://www.linkedin.com/in/jackcpalmer/"
+          target="_blank"
+        >
+          <h2 class="text-link">LinkedIn</h2>
+        </a>
+      </button>
+      <button>
+        <a
+          href="https://github.com/JCPenne"
+          target="_blank"
+        >
+          <h2 class="text-link">Github</h2>
+        </a>
+      </button>
+      <button>
+        <a
+          href="https://calendly.com/jackcpalmer"
+          target="_blank"
+        >
+          <h2 class="text-link">Coffee & A Chat</h2>
+        </a>
+      </button>
+      <button>
+        <a
+          href="mailto:jackcpalmer@gmail.com"
+          target="_blank"
+        >
+          <h2 class="text-link">Email Me</h2>
+        </a>
+      </button>
     </section>
     <button
       type="button"
       class="scroll-up-button"
+      onclick="scrollToTop()"
     >
       <a>Back To Top</a>
-      <i class="fa-solid fa-caret-up fa-2xl"></i>
+      <i
+        data-feather="chevron-up"
+        class="chevron-up"
+      ></i>
     </button>
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>
