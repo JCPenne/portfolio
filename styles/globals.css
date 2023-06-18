@@ -154,7 +154,6 @@ header {
   font-family: var(--font-secondary);
   font-weight: 600;
   font-size: 0.75rem;
-
   @media (width > 550px) {
     width: 85%;
     font-size: 1rem;
@@ -171,7 +170,7 @@ header {
     min-width: 80px;
     padding: 8px 8px;
     line-height: 100%;
-
+    cursor: pointer;
     background-color: transparent;
     border-radius: 16px;
 
