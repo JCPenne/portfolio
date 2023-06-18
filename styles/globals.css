@@ -11,7 +11,6 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--color-grey);
   padding: 32px 32px 0 32px;
 
   @media (width > 550px) {
@@ -71,7 +70,6 @@ h1 {
   font-weight: 600;
   font-size: 6.5rem;
   letter-spacing: -8px;
-  color: var(--color-black);
   line-height: 1;
   @media (width > 550px) {
     font-size: 10rem;
@@ -88,7 +86,6 @@ h2 {
   font-weight: 600;
   font-size: 1.5rem;
   letter-spacing: -2px;
-  color: var(--color-black);
 
   @media (width > 550px) {
     font-size: 2.25rem;
@@ -102,7 +99,6 @@ h3 {
   font-weight: 400;
   font-size: 1rem;
   letter-spacing: -0.5px;
-  color: var(--color-black);
 
   @media (width > 550px) {
     font-size: 1.25rem;
@@ -119,17 +115,12 @@ header {
   font-family: var(--font-secondary);
   font-weight: 600;
   font-size: 0.75rem;
-  color: var(--color-black);
 
   @media (width > 550px) {
     font-size: 1rem;
   }
   @media (width > 1100px) {
     font-size: 1.25rem;
-  }
-
-  :nth-child(2) {
-    text-decoration: underline var(--color-black);
   }
 }
 .hero-section {
@@ -180,10 +171,7 @@ header {
     line-height: 100%;
 
     background-color: transparent;
-    border: 1px solid var(--color-black);
     border-radius: 16px;
-
-    color: var(--color-black);
 
     @media (width > 550px) {
       min-width: 100px;
@@ -208,7 +196,6 @@ header {
 
   background-color: transparent;
   border: none;
-  color: var(--color-blue);
 
   @media (width > 550px) {
     top: calc(100% - 128px);
@@ -236,7 +223,7 @@ header {
 .content {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 5rem;
   padding-bottom: 5rem;
 
   & h3 {
@@ -279,9 +266,7 @@ header {
   }
 }
 .text-link {
-  text-decoration: solid var(--color-blue) underline;
   text-underline-offset: 8px;
-
   padding-bottom: 2rem;
 }
 .scroll-up-button {
@@ -297,14 +282,9 @@ header {
   font-weight: 600;
   background-color: transparent;
   border: none;
-  color: var(--color-black);
   white-space: nowrap;
   padding: 0;
   cursor: pointer;
-
-  & i {
-    color: var(--color-black);
-  }
 
   @media (width > 550px) {
     font-size: 1.5rem;
@@ -312,7 +292,6 @@ header {
   }
 
   & .chevron-up {
-    color: var(--color-blue);
     height: 64px;
     width: 64px;
 
