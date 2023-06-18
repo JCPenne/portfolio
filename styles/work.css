@@ -39,3 +39,34 @@ button {
     color: var(--color-blue);
   }
 }
+.content-container {
+  gap: 2rem;
+  & h2 {
+    font-weight: 400;
+    text-decoration: underline var(--color-blue);
+    text-underline-offset: 8px;
+  }
+}
+.project-title {
+  width: 25%;
+}
+.project-image-and-description {
+  display: flex;
+  gap: 1vw;
+}
+
+.project-gif {
+  width: 500px;
+  content: url('/images/whoofer.jpg');
+}
+.project-gif:hover {
+  content: url('/gifs/whoofer.gif');
+}
+.project-icons {
+  display: flex;
+  gap: 2vw;
+
+  & i {
+    font-size: 2rem;
+  }
+}
