@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JCPenne/portfolio/issues"
   },
-  "homepage": "https://github.com/JCPenne/portfolio#readme"
+  "homepage": "https://github.com/JCPenne/portfolio#readme",
+  "dependencies": {
+    "gsap": "^3.12.1"
+  }
 }

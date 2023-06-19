@@ -17,11 +17,14 @@ header,
 button {
   color: var(--color-blue);
 }
-header :nth-child(3) {
-  text-decoration: underline var(--color-blue);
-}
 button {
   border: 1px solid var(--color-blue);
+}
+.nav-group:nth-child(3) .nav-underline:first-of-type {
+  width: 100%;
+}
+.nav-underline {
+  background-color: var(--color-blue);
 }
 .scroll-down-button {
   color: var(--color-black);

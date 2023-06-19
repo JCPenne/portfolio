@@ -6,7 +6,6 @@
   --font-primary: 'Inter', sans-serif;
   --font-secondary: 'Montserrat', sans-serif;
 }
-
 body {
   background-color: var(--color-black);
 }
@@ -17,12 +16,13 @@ header,
 button {
   color: var(--color-white);
 }
-header :nth-child(1) {
-  text-decoration: underline var(--color-white);
-}
 button {
   border: 1px solid var(--color-white);
 }
+.nav-group:nth-child(1) .nav-underline:first-of-type {
+  width: 100%;
+}
+
 .scroll-down-button {
   color: var(--color-blue);
 }

@@ -125,6 +125,23 @@ header {
     font-size: 1.25rem;
   }
 }
+.nav-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & button {
+    background: none;
+    border: none;
+  }
+}
+.nav-underline {
+  display: block;
+  height: 2px;
+  content: '';
+  background-color: var(--color-white);
+}
+
 .hero-section {
   display: flex;
   flex-direction: column;
